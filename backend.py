@@ -30,5 +30,6 @@ def transcribe(audio_path: str | Path, language: str = "fr") -> str:
 if __name__ == "__main__":
     import sys
 
-    audio = sys.argv[1] if len(sys.argv) > 1 else "sample.mp3"
+    HERE = Path(__file__).parent
+    audio = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "AudioTest.ogg"
     print(transcribe(audio))
