@@ -1,0 +1,7 @@
+dotenv
+groq
+mistralai
+requests
+pillow
+plotly
+streamlit
